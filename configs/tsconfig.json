@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/jasmine-framework",
+            "expect-webdriverio",
+			"jest",
+            "mocha"
+        ],
+        "target": "es2019",
+        "lib": ["es6", "dom"]
+    }
+}
