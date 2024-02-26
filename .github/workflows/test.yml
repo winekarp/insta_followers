@@ -25,4 +25,4 @@ jobs:
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           FILE_WITH_NAMES: ${{ secrets.FILE_WITH_NAMES }}
         run: |
-          npm run wdio user_name="$USER_NAME" user_password="$USER_PASSWORD" file_with_names="$FILE_WITH_NAMES"
+          npm run wdio user_name=blokha_baba123 user_password=blokha_babablokha_baba file_with_names=https://www.editpad.org/?edit-id=qs9nfQUNbidfc7e22e
