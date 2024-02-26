@@ -99,7 +99,7 @@ export const config: Options.Testrunner = {
             },
             args: [
                 '--no-sandbox',
-                // '--headless',
+                '--headless',
                 '--disable-dev-shm-usage',
                 '--disable-setuid-sandbox',
                 '--disable-popup-blocking',
