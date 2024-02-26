@@ -11,7 +11,7 @@
         "@types/jasmine": "^2.6.0",
         "@types/jest": "^29.2.3",
         "@types/mocha": "^10.0.0",
-        "@wdio/allure-reporter": "^7.26.0",
+        "@wdio/allure-reporter": "^7.33.0",
         "@wdio/cli": "^7.25.0",
         "@wdio/dot-reporter": "^7.26.0",
         "@wdio/jasmine-framework": "^7.24.1",
