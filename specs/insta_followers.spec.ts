@@ -1,9 +1,12 @@
 import { InstaFollowersControl } from './insta_followers.control';
 import { azureParams } from '../configs/azure_params';
 
-let user_name = azureParams.user_name;
-let user_password = azureParams.user_password;
-let file_with_names = azureParams.file_with_names;
+// let user_name = azureParams.user_name;
+// let user_password = azureParams.user_password;
+// let file_with_names = azureParams.file_with_names;
+let user_name = `blokha_baba123`
+let user_password = `blokha_babablokha_baba`
+let file_with_names = `https://www.editpad.org/?edit-id=qs9nfQUNbidfc7e22e`
 
 describe('List of insta followers', () => {
     beforeEach(async () => {
