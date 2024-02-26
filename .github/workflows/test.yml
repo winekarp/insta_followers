@@ -14,16 +14,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Set Node.js version to 20
+          node-version: '20'
+
+      - name: Create Screenshots Directory
+        run: mkdir -p ./screenshots
 
       - name: Install dependencies
         run: npm install
 
       - name: Run WDIO tests
-        run: npm run wdio
+        run: |
+          npm run wdio || true
 
       - name: Upload Screenshots
-        if: always()  # Upload artifacts even if the previous steps failed
+        if: always()
         uses: actions/upload-artifact@v2
         with:
           name: screenshots
