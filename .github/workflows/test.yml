@@ -16,15 +16,15 @@ jobs:
         with:
           node-version: '20'  # Set Node.js version to 20
 
-      - name: Create Screenshots Directory
-        run: mkdir -p ./screenshots
+      - name: Install Chrome browser
+        run: |
+          choco install googlechrome -y
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run WDIO tests
-        run: |
-          npm run wdio || true  # Run WDIO tests and continue even if it fails
+      - name: Run WDIO tests with Allure reporter
+        run: npm run wdio
 
       - name: Generate Allure Report
         run: |
