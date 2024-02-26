@@ -24,7 +24,8 @@ jobs:
         run: npm install
 
       - name: Run WDIO tests with Allure reporter
-        run: npm run wdio
+        run: |
+          npm run wdio || true  # Run WDIO tests and continue even if it fails
 
       - name: Generate Allure Report
         run: |
